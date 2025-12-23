@@ -1,0 +1,125 @@
+cars = ['audi', 'bmw', 'subaru', 'toyota']
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+# If something is something, then use =
+# If something should be checked if it's equal, then use ==
+# Checking for equality
+fav_car = 'audi'
+if fav_car.title() == 'Audi':
+    print("True")
+else:
+    print("False")
+# Checking for inequality
+# If something should be checked if it's not equal, then use !=
+print("\nLet's request toppings:\n")
+request_topping = 'mushrooms'
+if request_topping != 'anchovies':
+    print("Hold the mushrooms!")
+else:
+    print("Hold the anchovies!")
+# Numerical comparisons
+print("\nLet's talk about the age you find out you were adopted:\n")
+age = 18
+if age == 18:
+    print("You are 18 years old!")
+else:
+    print("Fuck you!")
+print("\nLet's try out something new:\n")
+answer = 17
+if answer != 42:
+    print("That is not the correct answer. Please try again!")
+print("\nWhat about this?\n")
+age = 19
+if age >= 21:
+    print("False!")
+else:
+    print("True!")
+if age < 21:
+    print("True!")
+else:
+    print("False!")
+age_0 = 22
+age_1 = 18
+print("\nLet's use and to check multiple conditions:\n")
+if age_0 >= 21 and age_1 >=21:
+    print("True!")
+else:
+    print("False!")
+age_1 = 21
+if age_0 >= 21 and age_1 >= 21:
+    print("True!")
+else:
+    print("False!")
+print("\nLet's use or to check multiple conditions:\n")
+age_0 = 22
+age_1 = 18
+if age_0 >= 21 or age_1 >= 21:
+    print("True!")
+else:
+    print("False!")
+print("\nLet's check whether a value is in a list:\n")
+requested_toppings = ['mushrooms', 'onions', 'pineapple']
+if 'mushrooms' in requested_toppings:
+    print("True!")
+else:
+    print("False!")
+if 'pepperoni' in requested_toppings:
+    print("True!")
+else:
+    print("False!")
+print("\nLet's check whether a value is not in a list:\n")
+banned_users = ['andrew', 'carolina', 'david']
+user = 'marie'
+if user not in banned_users:
+    print(f"{user.title()}, you can post a response if you wish.")
+else:
+    print("Fuck off bitch")
+# exercise
+print("\nLet's try conditional tests:\n")
+car = 'subaru'
+print("Is car == 'subaru'? I predict True.")
+print(car == 'subaru')
+print("\nIs car == 'audi'? I predict False.")
+print(car == 'audi')
+
+print("\nDoes she love you?\n")
+she = 'loves me'
+if 'loves me' in she:
+    print('Yes!')
+else:
+    print('No!')
+print("\nDid she leave you for another girl?\n")
+leave = 'yes'
+if 'yes' in leave:
+    print('True')
+else:
+    print('False')
+print("\nDid she block you?\n")
+block = 'yes'
+if 'yes' in block:
+    print('True!')
+else:
+    print('False!')
+print("\n Did she leave permanently?\n")
+permanently = 'no'
+if 'yes' in permanently:
+    print('True')
+else:
+    print('False, she came back')
+print("\nYou didn't accept her right?\m")
+accept = 'yes'
+if 'no' in accept:
+    print('True')
+else:
+    print('false')
+print("\nAre you an idiot?\n")
+idiot = 'yes'
+if 'yes' in idiot:
+    print("Yeah, you're an idiot. Accept it.")
+else:
+    print('No')
+
+
