@@ -1,0 +1,165 @@
+print("Let's see if you are eligible to vote:")
+age = 19
+if age >= 18:
+    print("You are old enough to vote")
+else:
+    print("Sorry, you're too young to vote")
+print("\nLet's talk about the admission cost:\n")
+age = 12
+if age <= 7:
+    print("Your admission cost is $0")
+elif age < 18:
+    print("Your admission cost is $20")
+else:
+    print("Your admission cost is $35")
+print("OR")
+if age <= 7:
+    price = 0
+elif age < 18:
+    price = 20
+else:
+    price = 35
+print(f"Your admission cost is ${price} ")
+print("\nLet's add more elif:\n")
+age = 70
+if age <= 7:
+    price = 0
+elif age < 18:
+    price = 20
+elif age <= 65:
+    price = 35
+else:
+    price = 15
+print(f"Your admission price is ${price}")
+print("\nLet's make sure it checks every option:\n")
+requested_toppings = ['mushrooms', 'extra cheese']
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms")
+if 'pepperoni' in requested_toppings:
+    print("Adding pepperoni")
+if "extra cheese" in requested_toppings:
+    print("Adding extra cheese")
+print("\nFinished making your new pizza!\n")
+print("\nLet's practice:\n")
+print("Alien colors 1:")
+alien_color = ['green', 'yellow', 'red']
+if 'green' in alien_color:
+    print("You earned 5 points!")
+if 'blue' in alien_color:
+    print("No points")
+print("\nAlien colors 2:\n")
+alien_color = 'blue'
+if 'green' in alien_color:
+    print("You earned 5 points!")
+else:
+    print("You earned 10 points!")
+print("\nAlien colors 3:\n")
+alien_color = 'red'
+if 'green' in alien_color:
+    print("You earned 5 points!")
+elif 'yellow' in alien_color:
+    print("You earned 10 points!")
+else:
+    print("You earned 15 points!")
+print("\nLet's focus on the stages of life:\n")
+age = 15
+if age < 2:
+    print("You are a baby!")
+elif age < 4:
+    print("You are a toddler!")
+elif age < 13:
+    print("You are a kid!")
+elif age < 20:
+    print("You are a teenager!")
+elif age < 65:
+    print("You are an adult!")
+else:
+    print("You are an elder!")
+print("\nLet's focus on favorite foods with if statements:\n")
+favorite_fruits = ['apple', 'orange', 'banana']
+if 'banana' in favorite_fruits:
+    print("You really like bananas!")
+if 'strawberry' in favorite_fruits:
+    print("You really like strawberries!")
+if 'apple' in favorite_fruits:
+    print("You really like apples!")
+if 'berries' in favorite_fruits:
+    print("What's your favorite berry?")
+if 'orange' in favorite_fruits:
+    print("You really like oranges!")
+print("\nLet's use if statements with lists:\n")
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+for requested_topping in requested_toppings:
+    print(f"Adding {requested_topping}")
+print("\nFinished making your pizza!")
+print("\nWhen there is no green peppers:\n")
+for requested_topping in requested_toppings:
+    if requested_topping == 'green peppers':
+        print("Sorry, we are out of green peppers right now")
+    else:
+        print(f"Adding {requested_topping}")
+print("\nFinished making your pizza!")
+print("\nLet's check if a list is not empty:\n")
+requested_toppings = []
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print(f"Adding {requested_topping}")
+    print("\nFinished making your pizza!")
+else:
+    print("Are you sure you want a plain pizza?")
+print("\nLet's put it all together:\n")
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        if requested_topping ==  'green peppers':
+            print("Sorry, we are out of green peppers right now")
+        else:
+            print(f"Adding {requested_topping}")
+    print("\nFinished making your pizza!\n")
+else:
+    print("Are you sure you want a plain pizza?")
+print("\nLet's use multiple lists:\n")
+available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+for requested_topping in requested_toppings:
+    if requested_toppings in available_toppings:
+        print(f"Adding {requested_topping}")
+    else:
+        print(f"Sorry, we don't have {requested_topping}")
+print("\nWe finished making your pizza!\n")
+print("\nLet's practice Hello Admin:\n")
+usernames = ['admin', 'adam', 'hana', 'eve', 'bob']
+if 'admin' in usernames:
+    print("Hello admin, would you like to see a status report?")
+else:
+    for username in usernames:
+        print(f"Hello {username.title()}, thank you for logging in again")
+print("\nLet's check no users:\n")
+usernames = []
+if usernames:
+    if 'admin' in usernames:
+        print("Hello admin, would you like to see a status report?")
+    else:
+        for username in usernames:
+            print(f"Hello {username.title()}, thank you for loggin in again")
+else:
+    print("We need to find some users!")
+print("\nLet's check usernames to see if they are unique:\n")
+current_users = ['hana', 'bob', 'ben', 'adam', 'eve']
+new_users = ['jake', 'shane', 'adam', 'brent', 'bob']
+for users in new_users:
+  if users in current_users:
+    print("Username is not available, try again")
+  else:
+    print("Username is available")
+print("\nLet's try out ordinal numbers:\n")
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for number in numbers:
+    if number == 1:
+        print("1st")
+    elif number == 2:
+        print("2nd")
+    elif number == 3:
+        print("3rd")
+    else:
+        print(f"{number}th")
